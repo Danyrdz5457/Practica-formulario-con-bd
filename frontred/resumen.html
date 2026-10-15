@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumen del pedido</title>
+  <link rel="stylesheet" href="resumen.css">
+</head>
+<body>
+
+  <div class="tarjeta">
+
+    <header class="encabezado">
+      <p class="cafeteria">CAFETERÍA CENTRAL</p>
+      <h1>Resumen del pedido</h1>
+      <p>Pedido recibido</p>
+    </header>
+
+    <section class="seccion">
+      <h2>Datos del cliente</h2>
+      <div class="dato"><b>Cliente:</b><span id="cliente"></span></div>
+      <div class="dato"><b>Correo:</b><span id="correo"></span></div>
+    </section>
+
+    <section class="seccion">
+      <h2>Pedido</h2>
+      <div class="dato"><b>Producto:</b><span id="producto"></span></div>
+      <div class="dato"><b>Cantidad:</b><span id="cantidad"></span></div>
+      <div class="dato"><b>Tamaño:</b><span id="tamano"></span></div>
+      <div class="dato"><b>Para llevar:</b><span id="llevar"></span></div>
+    </section>
+
+    <section class="seccion">
+      <h2>Observaciones</h2>
+      <div class="obs" id="observaciones"></div>
+    </section>
+
+    <p class="aviso" id="aviso"></p>
+
+  </div>
+
+  <script src="resumen.js"></script>
+</body>
+</html>

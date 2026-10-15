@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef1f7;
+  margin: 0;
+  padding: 23px;
+  color: #333;
+}
+ .tarjeta {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: white;
+  border-top: 5px solid #4a6cf7;
+  border-radius: 8px;
+}
+.encabezado {
+  text-align: center;
+  padding: 23px;
+  background-color: #f7f9fe;
+}
+ 
+.cafeteria {
+  font-size: 15px;
+  color: #4a6cf7;
+  letter-spacing: 5px;
+}
+ 
+.encabezado h1 {
+  color: #2f4fd8;
+  font-size: 27px;
+  margin: 13px 0;
+}
+.seccion {
+  padding: 23px;
+  border-top: 4px solid #ddd;
+}
+ 
+.seccion h2 {
+  text-align: center;
+  color: #2f4fd8;
+  font-size: 19px;
+  margin-top: 0;
+}
+.fila {
+  display: flex;
+  gap: 20px;
+}
+ 
+.campo {
+  flex: 1;
+}
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+ 
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 11px;
+  border: 4px solid #ccc;
+  border-radius: 8px;
+  font-size: 17px;
+  box-sizing: border-box;
+}
+ 
+textarea {
+  resize: vertical;
+}
+.cantidad {
+  display: flex;
+}
+ 
+.cantidad button {
+  width: 40px;
+  border: 1px solid #ccc;
+  background-color: #eef1f7;
+  color: #4a6cf7;
+  font-size: 30px;
+  cursor: pointer;
+}
+ 
+.cantidad input {
+  width: 63px;
+  text-align: center;
+  border: 1px solid #ccc;
+  font-size: 18px;
+}
+.centro {
+  text-align: center;
+  margin-top: 23px;
+}
+ 
+.centro label {
+  display: inline-block;
+  font-weight: normal;
+  margin: 0 13px;
+}
+ 
+.etiqueta {
+  font-size: 19px;
+  font-weight: bold;
+}
+.botones {
+  text-align: center;
+  padding: 23px;
+  border-top: 5px solid #ddd;
+}
+ 
+.botones button {
+  padding: 10px 25px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+ 
+.boton-blanco {
+  background-color: white;
+  color: #4a6cf7;
+  border: 1px solid #4a6cf7;
+}
+.boton-azul {
+  background-color: #4a6cf7;
+  color: white;
+  border: 1px solid #4a6cf7;
+}
+.error {
+  color: red;
+  font-size: 12px;
+}
+ 
+.campo-malo {
+  border: 1px solid red !important;
+}
+ 
+#mensaje {
+  text-align: center;
+  font-weight: bold;
+  color: green;
+  padding-bottom: 23px;
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .fila {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

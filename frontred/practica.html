@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de pedido</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <div class="tarjeta">
+
+    <header class="encabezado">
+      <p class="cafeteria">CAFETERIA CENTRAL</p>
+      <h1>Formulario de pedido</h1>
+      <p>Completa los datos para registrar tu pedido.</p>
+    </header>
+
+    <form id="formulario" action="http://localhost:3000/pedido" method="POST">
+
+      <section class="seccion">
+        <h2>Datos del cliente</h2>
+        <div class="fila">
+          <div class="campo">
+            <label for="nombre">Nombre del cliente *</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+            <span class="error" id="error-nombre"></span>
+          </div>
+          <div class="campo">
+            <label for="correo">Correo electronico *</label>
+            <input type="text" id="correo" name="correo" placeholder="nombre@ejemplo.com">
+            <span class="error" id="error-correo"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="seccion">
+        <h2>Pedido</h2>
+        <div class="fila">
+          <div class="campo">
+            <label for="producto">Producto *</label>
+            <select id="producto" name="producto">
+              <option value="">Selecciona un producto</option>
+              <option value="Cafe americano">Cafe americano</option>
+              <option value="Capuchino">Capuchino</option>
+              <option value="Latte">Latte</option>
+              <option value="Te chai">Te chai</option>
+              <option value="Chocolate caliente">Chocolate caliente</option>
+            </select>
+            <span class="error" id="error-producto"></span>
+          </div>
+          <div class="campo">
+            <label for="cantidad">Cantidad *</label>
+            <div class="cantidad">
+              <button type="button" id="menos">-</button>
+              <input type="number" id="cantidad" name="cantidad" value="1" min="1">
+              <button type="button" id="mas">+</button>
+            </div>
+            <span class="error" id="error-cantidad"></span>
+          </div>
+        </div>
+
+        <div class="centro">
+          <p class="etiqueta">Tamaño de la bebida *</p>
+          <label><input type="radio" name="tamano" value="Pequeño"> Pequeño</label>
+          <label><input type="radio" name="tamano" value="Mediano"> Mediano</label>
+          <label><input type="radio" name="tamano" value="Grande"> Grande</label>
+          <br>
+          <span class="error" id="error-tamano"></span>
+        </div>
+
+        <div class="centro">
+          <label><input type="checkbox" id="llevar" name="llevar" value="Sí"> Pedido para llevar</label>
+        </div>
+      </section>
+
+      <section class="seccion">
+        <h2>Observaciones</h2>
+        <label for="observaciones">Indicaciones adicionales (opcional)</label>
+        <textarea id="observaciones" name="observaciones" rows="4" placeholder="Escribe aqui alguna indicacion para tu pedido..."></textarea>
+      </section>
+
+      <div class="botones">
+         <button type="button" id="limpiar" class="boton-blanco">Limpiar</button>
+   <button type="button" id="registrar" class="boton-azul">Registrar</button>
+      </div>
+
+      <p id="mensaje"></p>
+
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

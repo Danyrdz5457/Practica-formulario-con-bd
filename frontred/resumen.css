@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef1f7;
+  margin: 0;
+  padding: 23px;
+  color: #333;
+}
+
+.tarjeta {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: white;
+  border-top: 5px solid #4a6cf7;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.encabezado {
+  text-align: center;
+  padding: 23px;
+  background-color: #f7f9fe;
+}
+
+.cafeteria {
+  font-size: 15px;
+  color: #4a6cf7;
+  letter-spacing: 3px;
+  margin: 8px 0;
+}
+
+.encabezado h1 {
+  color: #2f4fd8;
+  font-size: 27px;
+  margin: 13px 0;
+}
+
+.encabezado p {
+  margin: 8px 0;
+}
+
+.seccion {
+  padding: 20px 23px;
+  border-top: 1px solid #ddd;
+}
+
+.seccion h2 {
+  text-align: center;
+  color: #2f4fd8;
+  font-size: 19px;
+  margin: 0 0 14px;
+}
+
+.dato {
+  display: flex;
+  gap: 20px;
+  padding: 9px 0;
+  border-bottom: 1px solid #eee;
+  min-height: 20px;
+}
+
+.dato b {
+  width: 110px;
+  flex-shrink: 0;
+}
+
+.dato span {
+  flex: 1;
+  min-height: 18px;
+  overflow-wrap: anywhere;
+}
+
+.obs {
+  border-bottom: 1px solid #eee;
+  min-height: 26px;
+  overflow-wrap: anywhere;
+}
+
+.aviso {
+  text-align: center;
+  color: #c0392b;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 23px 20px;
+}
+
+@media (max-width: 600px) {
+  .dato b {
+    width: 95px;
+  }
+  .dato {
+    gap: 12px;
+  }
+}
